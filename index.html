@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Addiction Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Are You Addicted to Your Phone?</h1>
+            <p class="tagline">A highly scientific and absolutely unbiased test!</p>
+        </header>
+
+        <main>
+            <form id="addiction-test">
+                <div class="question">
+                    <label for="screen-time">
+                        1. How long do you spend staring at your phone screen each day?
+                    </label>
+                    <select id="screen-time" name="screen-time">
+                        <option value="less_than_hour">Less than an hour (You must live in the 90s!)</option>
+                        <option value="1_3_hours">1-3 hours (That’s cute.)</option>
+                        <option value="3_6_hours">3-6 hours (Your phone loves you.)</option>
+                        <option value="6_plus_hours">6+ hours (Your phone IS your best friend.)</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="phantom-vibrations">
+                        2. Do you ever feel phantom vibrations when your phone isn’t in your pocket?
+                    </label>
+                    <select id="phantom-vibrations" name="phantom-vibrations">
+                        <option value="never">Never (What’s a phantom vibration?)</option>
+                        <option value="sometimes">Sometimes (Is that my phone or my soul leaving my body?)</option>
+                        <option value="always">Always (It’s basically a feature at this point.)</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="battery-anxiety">
+                        3. How do you feel when your battery is below 20%?
+                    </label>
+                    <select id="battery-anxiety" name="battery-anxiety">
+                        <option value="calm">Calm (I’ll charge it later.)</option>
+                        <option value="nervous">Nervous (Is it weird that I’m sweating?)</option>
+                        <option value="panic">Full panic mode (WHERE IS MY CHARGER?!)</option>
+                    </select>
+                </div>
+
+                <div class="question">
+                    <label for="first-morning-check">
+                        4. What’s the first thing you check in the morning?
+                    </label>
+                    <select id="first-morning-check" name="first-morning-check">
+                        <option value="news">The news (Because doomscrolling is a vibe.)</option>
+                        <option value="social">Social media (What did I miss in the last 8 hours?)</option>
+                        <option value="nothing">Nothing (Liar.)</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-button">Submit and Diagnose Me</button>
+            </form>
+
+            <div id="result" class="hidden">
+                <h2>Your Diagnosis:</h2>
+                <p id="diagnosis-text">Let’s see how "healthy" your relationship with your phone is...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Phone Addiction Institute of Satire</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
